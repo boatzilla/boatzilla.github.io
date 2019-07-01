@@ -7,7 +7,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 1em/1.8 "Lato", sans-serif;
   color: #777;
 }
 
@@ -29,23 +29,28 @@ body, html {
   top: 20%;
   left: 15%;
   right: 45%;
-  #width: 100%;
-  #text-align: center;
-  color: #111;
+  color: #fff;
 }
 
-.caption span.border {
-  #background-color: #145;
+.caption div.header {
   color: #fff;
-  #padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  font-size: 1.8em;
+  letter-spacing: .3em;
+}
+
+.caption div.value {
+  margin-bottom: 2em;
+}
+
+.caption div.survey {
+  color: #fff;
+  margin-top: 2em;
 }
 
 h3 {
-  letter-spacing: 5px;
+  letter-spacing: .3em;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 2em "Lato", sans-serif;
   color: #111;
 }
 </style>
@@ -54,10 +59,10 @@ h3 {
 
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">COMING SOON</span><br>
-    <span class="border">TO A DOCK NEAR YOU!</span>
+    <div class="header">COMING SOON<br>
+    TO A DOCK NEAR YOU!</div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="value">Alleviate the high stress of buying your first recreational boat. Find the right boat for you, faster. And connect with the trusted boating professionals to make your dream a reality!</div>
 
     <div id="mc_embed_signup">
     <form action="https://boatzilla.us3.list-manage.com/subscribe/post?u=d2a42d99a855033cfa48824b8&amp;id=ac72438172" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -70,7 +75,7 @@ h3 {
     </form>
     </div>
 
-    <div id="survey">
+    <div class="survey">
       Are you a yacht broker? Please <a href="https://www.surveymonkey.com/r/3WQBV7G">take our 3-min survey</a> to help us make this site better.
     </div>
 

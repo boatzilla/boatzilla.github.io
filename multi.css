@@ -1,0 +1,59 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 1em/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #F09A9D; /* Red */
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: #F5CF8E; /* Yellow */
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 0.85;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bgimg-1 {
+        background-image: url("background.jpg");
+        height: 100%;
+    }
+
+    .caption {
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        right: 45%;
+        color: #fff;
+    }
+
+    .caption div.header {
+        color: #fff;
+        font-size: 1.8em;
+        letter-spacing: .3em;
+    }
+
+    .caption div.value {
+        margin-bottom: 2em;
+    }
+
+    .caption div.survey {
+        color: #fff;
+        margin-top: 2em;
+    }
+}

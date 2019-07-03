@@ -12,110 +12,114 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .bgimg-1 {
     background-image: url("background.jpg");
-    height: 100%;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
+.caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    right: 45%;
+    color: #fff;
+}
+
+.caption .header {
+    font-size: 1.8em;
+    letter-spacing: .3em;
+}
+
+.caption .value {
+    margin-bottom: 2em;
+    color: #111;
+}
+
+.caption .survey {
+    margin-top: 2em;
+}
+
+/* Desktop Styles */
+@media only screen and (max-width: 1140px) {
+    .caption {
+        left: 10%;
+        right: 30%;
+    }
+}
+
+/* Laptop L Styles */
+@media only screen and (max-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
-        position: relative;
-        opacity: 0.85;
+        background-position: 30% 0%;
+    }
+}
+
+/* Laptop Styles */
+@media only screen and (max-width: 960px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
         background-position: 60% 0%;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .caption {
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        right: 30%;
-        color: #fff;
+        top: 5%;
     }
 
-    .caption div.header {
-        color: #fff;
+    .caption .header {
         font-size: 1.2em;
         letter-spacing: .2em;
     }
 
-    .caption div.value {
-        margin-bottom: 2em;
-        font-size: 0.8em;
-        color: #111;
-    }
-
-    .caption div.survey {
-        color: #fff;
-        margin-top: 2em;
+    .caption .value,
+    .caption .survey {
         font-size: 0.8em;
     }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (max-width: 823px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
-        position: relative;
-        opacity: 0.85;
-        background-position: 60% 0%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .caption {
-        position: absolute;
-        top: 5%;
-        left: 10%;
-        right: 30%;
-        color: #fff;
-    }
-
-    .caption div.header {
-        color: #fff;
-        font-size: 1.2em;
-        letter-spacing: .2em;
-    }
-
-    .caption div.value {
-        margin-bottom: 2em;
-        font-size: 0.8em;
-        color: #111;
-    }
-
-    .caption div.survey {
-        color: #fff;
-        margin-top: 2em;
-        font-size: 0.8em;
+        background-position: 30% 0%;
     }
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
+/* Mobile L Styles */
+@media only screen and (max-width: 425px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-position: 55% 0%;
+    }
+}
+
+@media only screen and (max-height: 425px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        min-height: 600px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
     .caption {
-        position: absolute;
-        top: 20%;
-        left: 15%;
-        right: 45%;
-        color: #fff;
+        top: 10%;
     }
+}
 
-    .caption div.header {
-        color: #fff;
-        font-size: 1.8em;
-        letter-spacing: .3em;
+/* iPad Styles */
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-position: 50% 0%;
     }
+}
 
-    .caption div.value {
-        margin-bottom: 2em;
-        color: #111;
+/* iPhone7 Plus Styles */
+@media only screen and (width: 960px) and (height: 540px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-position: 0% 0%;
+        min-height: 600px;
     }
-
-    .caption div.survey {
-        color: #fff;
-        margin-top: 2em;
+}
+@media only screen and (width: 540px) and (height: 960px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-position: 55% 0%;
     }
 }

@@ -16,20 +16,28 @@ body, html {
 }
 
 .bgimg-1 {
-    background-image: url("background.jpg");
+    background-image: url("http://boatzilla-nlb-7262a6c5ad281a45.elb.us-west-2.amazonaws.com/potm");
 }
 
 .caption {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 15%;
     right: 45%;
-    color: #fff;
-}
+    border-radius: 25px;
+    padding: 20px;
+    color: #00aac4;
+    background-color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=8); /* For IE8 and earlier */
+  }
 
 .caption .header {
     font-size: 1.8em;
+    text-transform: uppercase;
     letter-spacing: .3em;
+    line-height: 1.3em;
+    margin-bottom: .5em;
 }
 
 .caption .value {
@@ -100,7 +108,7 @@ body, html {
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     .caption {
-        top: 10%;
+        top: 5%;
     }
 }
 

@@ -16,7 +16,7 @@ body, html {
 }
 
 .bgimg-1 {
-    background-image: url("http://boatzilla-nlb-7262a6c5ad281a45.elb.us-west-2.amazonaws.com/potm");
+    background-image: url("https://boatzilla.com/background.png");
 }
 
 .caption {

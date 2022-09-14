@@ -35,6 +35,7 @@ body, html {
 .caption .header {
     font-size: 1.8em;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: .3em;
     line-height: 1.3em;
     margin-bottom: .5em;
